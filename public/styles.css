@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(179, 25, 179); /* add this line */
+}
+
+
+header {
+  background-image: url('https://cdn.donmai.us/original/85/b1/__hakurei_reimu_touhou_drawn_by_haru_akira__85b19a8fab4cfe9e81e4d0879ccfae50.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header-container {
+  position: relative;
+}
+
+.left-gif {
+  position: absolute;
+  z-index: 1;  /* This makes the gif appear on top of other elements */
+  left: 70%;  /* Adjust this value to move the gif to the right */
+}
+
+
+.header-text {
+  position: relative;
+  z-index: 0;  /* This will place the text behind the gif */
+}
+
+.right-gif {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.topleft-gif {
+  position: fixed;
+  top: 0;
+  left: 0;
+  top: 2%;
+}
+
+.topright-gif {
+  position: fixed;
+  top: 0;
+  right: 0;
+  top: 2%;
+}
+
+
+header h1, header h2 {
+  text-align: center;
+  color: white;
+  padding: 20px 0;  /* You can adjust this value to position your text */
+}
+
+  main {
+      margin-left: 50px;
+  }
+  
+  #username {
+      max-width: 300px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  #messages-container {
+    border: 1px solid #ccc;
+    height: 300px;
+    margin: 2rem 0;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+  
+  form#chat-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  .send-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+  }
+  
+  .send-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  form#chat-form label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .message {
+    margin: 20px 0;
+  }

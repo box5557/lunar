@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>Lunar Lounge Chat Room</title>
+</head>
+<body>
+    <img class="topleft-gif" src="/sakuya.gif" alt="Top Left Gif">
+    <img class="topright-gif" src="/genjii.gif" alt="Top Right Gif">
+
+    <header>
+        <h1>Lunar Lounge Suggestion Page</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Suggestion Page</a></li>
+                <li><a href="/about-us">About Us</a></li>
+            </ul>
+        </nav>
+        <h2>Feel free to speak your mind :)</h2>
+    </header>
+    <main>
+        <div class="header-container">
+            <img class="left-gif" src="/reisen1.gif" alt="Left Gif">
+            <div class="header-text">
+                <h1>Leave your suggestions here</h1>
+                <h2>Type your message in the box at the bottom of the page</h2>
+            </div>
+        </div>
+
+        <img class="right-gif" src="/cirno1.gif" alt="Right Gif">
+
+        <div id="messages-container">
+            <!-- Messages will be displayed here -->
+        </div>
+        <form id="chat-form">
+            <label for="username">Enter your username (optional):</label>
+            <input type="text" id="username" name="username">
+
+            <input type="text" id="message" name="message" placeholder="Message" required>
+            <button type="submit" class="send-btn">Send</button>
+        </form>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/scripts.js"></script>
+</body>
+</html>
