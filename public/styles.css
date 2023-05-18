@@ -24,6 +24,12 @@ header {
   bottom: 1%
 }
 
+.snoop-gif {
+  position: fixed;
+  left: 1%; 
+  bottom: 0%
+}
+
 .left-gif {
   position: absolute;
   z-index: 1;
