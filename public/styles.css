@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(179, 25, 179); 
-  padding-bottom: 14vh; /* Adjust this value to create more space at the bottom */
+  padding-bottom: 1vh; /* Adjust this value to create more space at the bottom */
 }
 
 
@@ -18,10 +18,16 @@ header {
   position: relative;
 }
 
+.marisa-gif {
+  position: absolute;
+  right: 1%; 
+  bottom: 1%
+}
+
 .left-gif {
   position: absolute;
-  z-index: 1;  /* This makes the gif appear on top of other elements */
-  left: 70%;  /* Adjust this value to move the gif to the right */
+  z-index: 1;
+  right: 30%; 
 }
 
 
@@ -39,6 +45,7 @@ header {
 
 .topleft-gif {
   position: fixed;
+  z-index: 1;  /* This makes the gif appear on top of other elements */
   top: 0;
   left: 0;
   top: 2%;
@@ -54,7 +61,7 @@ header {
 .bottomleft-gif {
   position: absolute;
   bottom: 0;
-  left: 30%;
+  right: 70%;
 }
 
 .bottomright-gif {
@@ -72,13 +79,13 @@ header {
 .middleleft-gif {
   position: absolute;
   bottom: 10%;
-  left: 67%;
+  right: 33%;
 }
 
 .centertop-gif {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 50%;
+  left: 30%;
   transform: translateX(-50%);
 }
 
@@ -92,7 +99,7 @@ header {
 .farleft-gif {
   position: fixed;
   top: 75%;
-  left: 0;
+  right: 100%;
 }
 
 .farright-gif {
@@ -104,7 +111,7 @@ header {
 .center-gif {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
 
