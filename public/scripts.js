@@ -40,5 +40,3 @@ function displayMessages(messages) {
 // Fetch messages initially
 fetchMessages();
 
-
-  

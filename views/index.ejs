@@ -6,8 +6,62 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <title>Lunar Lounge Chat Room</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+        #entrance-text h1 {
+            font-family: 'Audiowide', cursive;
+        }
+    </style>
 </head>
 <body>
+    <!-- MUSIC -->
+    <audio id="bg-music" loop>
+        <source src="/Treasure_Mountain.ogg" type="audio/ogg">
+    </audio>
+
+    <div id="welcome-screen" onclick="removeWelcomeScreen(event)">
+        <div id="entrance-text">
+            <h1>Welcome to the Lunar Lounge!</h1>
+            <p>Click anywhere to enter...</p>
+        </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <button id="mute-button" onclick="toggleMute()">Mute/Unmute Music</button>
+
+       
+
+        <script>
+            function removeWelcomeScreen(event) {
+                document.getElementById("welcome-screen").style.display = "none";
+                document.getElementById("main-content").style.display = "block";
+                var music = document.getElementById("bg-music");
+                music.play();
+
+                // Set flag in localStorage
+                localStorage.setItem('welcomeScreenSeen', 'true');
+            }
+
+
+            function toggleMute() {
+                var music = document.getElementById("bg-music");
+                music.muted = !music.muted;
+            }
+
+            window.onload = function() {
+                if(localStorage.getItem('welcomeScreenSeen') === 'true') {
+                    document.getElementById("welcome-screen").style.display = "none";
+                    document.getElementById("main-content").style.display = "block";
+                    var music = document.getElementById("bg-music");
+                    music.play();
+                }
+            }
+
+        </script>
+
+        
+    
+
     <img class="topleft-gif" src="/sakuya.gif" alt="Top Left Gif">
     <img class="topright-gif" src="/genjii.gif" alt="Top Right Gif">
     <img class="bottomleft-gif" src="/aya1.gif" alt="Bottom Left Gif">
