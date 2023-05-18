@@ -2,7 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(179, 25, 179); /* add this line */
+  background-color: rgb(179, 25, 179); 
+  padding-bottom: 14vh; /* Adjust this value to create more space at the bottom */
 }
 
 
@@ -48,6 +49,67 @@ header {
   top: 0;
   right: 0;
   top: 2%;
+}
+
+.bottomleft-gif {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+
+.bottomright-gif {
+  position: absolute;
+  bottom: 0.5%;
+  right: 40%;
+}
+
+.middleright-gif {
+  position: absolute;
+  top: 88.48%;
+  right: 15%;
+}
+
+.middleleft-gif {
+  position: absolute;
+  bottom: 10%;
+  left: 67%;
+}
+
+.centertop-gif {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centerbottom-gif {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.farleft-gif {
+  position: fixed;
+  top: 75%;
+  left: 0;
+}
+
+.farright-gif {
+  position: fixed;
+  top: 75%;
+  right: 0;
+}
+
+.center-gif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-gif, .right-gif, .topleft-gif, .topright-gif, .bottomleft-gif, .bottomright-gif, .middleright-gif, .middleleft-gif, .centertop-gif, .centerbottom-gif, .farleft-gif, .farright-gif, .center-gif {
+  pointer-events: none;
 }
 
 
